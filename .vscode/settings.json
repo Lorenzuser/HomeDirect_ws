@@ -1,0 +1,42 @@
+{
+    "python.autoComplete.extraPaths": [
+        "/home/dev/HomeDirect_ws/build/turtlebot3_teleop",
+        "/home/adev/HomeDirect_ws/install/turtlebot3_teleop/lib/python3.10/site-packages",
+        "/home/dev/HomeDirect_ws/build/turtlebot3_example",
+        "/home/adev/HomeDirect_ws/install/turtlebot3_example/lib/python3.10/site-packages",
+        "/home/dev/HomeDirect_ws/build/nav_main",
+        "/home/adev/HomeDirect_ws/install/nav_main/lib/python3.10/site-packages",
+        "/home/adev/ros2_ws/build/tb3_rfid",
+        "/home/adev/ros2_ws/install/tb3_rfid/lib/python3.10/site-packages",
+        "/home/adev/ros2_ws/build/my_robot_controller",
+        "/home/adev/ros2_ws/install/my_robot_controller/lib/python3.10/site-packages",
+        "/home/adev/turtlebot3_ws/build/turtlebot3_teleop",
+        "/home/adev/turtlebot3_ws/install/turtlebot3_teleop/lib/python3.10/site-packages",
+        "/home/adev/turtlebot3_ws/build/turtlebot3_example",
+        "/home/adev/turtlebot3_ws/install/turtlebot3_example/lib/python3.10/site-packages",
+        "/home/adev/turtlebot3_ws/install/turtlebot3_msgs/local/lib/python3.10/dist-packages",
+        "/home/adev/turtlebot3_ws/install/dynamixel_sdk_custom_interfaces/local/lib/python3.10/dist-packages",
+        "/opt/ros/humble/lib/python3.10/site-packages",
+        "/opt/ros/humble/local/lib/python3.10/dist-packages"
+    ],
+    "python.analysis.extraPaths": [
+        "/home/dev/HomeDirect_ws/build/turtlebot3_teleop",
+        "/home/adev/HomeDirect_ws/install/turtlebot3_teleop/lib/python3.10/site-packages",
+        "/home/dev/HomeDirect_ws/build/turtlebot3_example",
+        "/home/adev/HomeDirect_ws/install/turtlebot3_example/lib/python3.10/site-packages",
+        "/home/dev/HomeDirect_ws/build/nav_main",
+        "/home/adev/HomeDirect_ws/install/nav_main/lib/python3.10/site-packages",
+        "/home/adev/ros2_ws/build/tb3_rfid",
+        "/home/adev/ros2_ws/install/tb3_rfid/lib/python3.10/site-packages",
+        "/home/adev/ros2_ws/build/my_robot_controller",
+        "/home/adev/ros2_ws/install/my_robot_controller/lib/python3.10/site-packages",
+        "/home/adev/turtlebot3_ws/build/turtlebot3_teleop",
+        "/home/adev/turtlebot3_ws/install/turtlebot3_teleop/lib/python3.10/site-packages",
+        "/home/adev/turtlebot3_ws/build/turtlebot3_example",
+        "/home/adev/turtlebot3_ws/install/turtlebot3_example/lib/python3.10/site-packages",
+        "/home/adev/turtlebot3_ws/install/turtlebot3_msgs/local/lib/python3.10/dist-packages",
+        "/home/adev/turtlebot3_ws/install/dynamixel_sdk_custom_interfaces/local/lib/python3.10/dist-packages",
+        "/opt/ros/humble/lib/python3.10/site-packages",
+        "/opt/ros/humble/local/lib/python3.10/dist-packages"
+    ]
+}

@@ -1,0 +1,25 @@
+{
+  "configurations": [
+    {
+      "browse": {
+        "databaseFilename": "${default}",
+        "limitSymbolsToIncludedHeaders": false
+      },
+      "includePath": [
+        "/home/adev/turtlebot3_ws/install/turtlebot3_fake_node/include/**",
+        "/home/adev/turtlebot3_ws/install/turtlebot3_msgs/include/**",
+        "/home/adev/turtlebot3_ws/install/turtlebot3_gazebo/include/**",
+        "/home/adev/turtlebot3_ws/install/dynamixel_sdk_custom_interfaces/include/**",
+        "/home/adev/turtlebot3_ws/install/dynamixel_sdk/include/**",
+        "/opt/ros/humble/include/**",
+        "/usr/include/**"
+      ],
+      "name": "ROS",
+      "intelliSenseMode": "gcc-x64",
+      "compilerPath": "/usr/bin/gcc",
+      "cStandard": "gnu11",
+      "cppStandard": "c++14"
+    }
+  ],
+  "version": 4
+}
