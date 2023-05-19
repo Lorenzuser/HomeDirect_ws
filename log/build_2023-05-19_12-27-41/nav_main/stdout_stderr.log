@@ -1,0 +1,25 @@
+running develop
+/usr/lib/python3/dist-packages/setuptools/command/easy_install.py:158: EasyInstallDeprecationWarning: easy_install command is deprecated. Use build and pip and other standards-based tools.
+  warnings.warn(
+/usr/lib/python3/dist-packages/setuptools/command/install.py:34: SetuptoolsDeprecationWarning: setup.py install is deprecated. Use build and pip and other standards-based tools.
+  warnings.warn(
+/usr/lib/python3/dist-packages/pkg_resources/__init__.py:116: PkgResourcesDeprecationWarning: 1.16.0-unknown is an invalid version and will not be supported in a future release
+  warnings.warn(
+/usr/lib/python3/dist-packages/pkg_resources/__init__.py:116: PkgResourcesDeprecationWarning: 1.1build1 is an invalid version and will not be supported in a future release
+  warnings.warn(
+/usr/lib/python3/dist-packages/pkg_resources/__init__.py:116: PkgResourcesDeprecationWarning: 0.1.43ubuntu1 is an invalid version and will not be supported in a future release
+  warnings.warn(
+running egg_info
+writing nav_main.egg-info/PKG-INFO
+writing dependency_links to nav_main.egg-info/dependency_links.txt
+writing entry points to nav_main.egg-info/entry_points.txt
+writing requirements to nav_main.egg-info/requires.txt
+writing top-level names to nav_main.egg-info/top_level.txt
+reading manifest file 'nav_main.egg-info/SOURCES.txt'
+writing manifest file 'nav_main.egg-info/SOURCES.txt'
+running build_ext
+Creating /home/dev/HomeDirect_ws/install/nav_main/lib/python3.10/site-packages/nav-main.egg-link (link to .)
+Installing controller_main script to /home/dev/HomeDirect_ws/install/nav_main/lib/nav_main
+
+Installed /home/dev/HomeDirect_ws/build/nav_main
+running install_data

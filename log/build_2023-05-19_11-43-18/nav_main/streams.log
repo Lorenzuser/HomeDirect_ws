@@ -1,0 +1,23 @@
+[1.074s] Invoking command in '/home/dev/HomeDirect_ws/src/nav_main': PYTHONPATH=/home/dev/HomeDirect_ws/build/nav_main/prefix_override:/home/dev/HomeDirect_ws/install/nav_main/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/nav_main build --build-base /home/dev/HomeDirect_ws/build/nav_main/build install --record /home/dev/HomeDirect_ws/build/nav_main/install.log --single-version-externally-managed
+[1.474s] running egg_info
+[1.474s] writing ../../build/nav_main/nav_main.egg-info/PKG-INFO
+[1.475s] writing dependency_links to ../../build/nav_main/nav_main.egg-info/dependency_links.txt
+[1.475s] writing entry points to ../../build/nav_main/nav_main.egg-info/entry_points.txt
+[1.475s] writing requirements to ../../build/nav_main/nav_main.egg-info/requires.txt
+[1.476s] writing top-level names to ../../build/nav_main/nav_main.egg-info/top_level.txt
+[1.479s] reading manifest file '../../build/nav_main/nav_main.egg-info/SOURCES.txt'
+[1.480s] writing manifest file '../../build/nav_main/nav_main.egg-info/SOURCES.txt'
+[1.480s] running build
+[1.480s] running build_py
+[1.481s] running install
+[1.481s] /usr/lib/python3/dist-packages/setuptools/command/install.py:34: SetuptoolsDeprecationWarning: setup.py install is deprecated. Use build and pip and other standards-based tools.
+[1.481s]   warnings.warn(
+[1.482s] running install_lib
+[1.483s] running install_data
+[1.485s] running install_egg_info
+[1.487s] removing '/home/dev/HomeDirect_ws/install/nav_main/lib/python3.10/site-packages/nav_main-0.0.0-py3.10.egg-info' (and everything under it)
+[1.487s] Copying ../../build/nav_main/nav_main.egg-info to /home/dev/HomeDirect_ws/install/nav_main/lib/python3.10/site-packages/nav_main-0.0.0-py3.10.egg-info
+[1.489s] running install_scripts
+[1.523s] Installing main.py script to /home/dev/HomeDirect_ws/install/nav_main/lib/nav_main
+[1.524s] writing list of installed files to '/home/dev/HomeDirect_ws/build/nav_main/install.log'
+[1.592s] Invoked command in '/home/dev/HomeDirect_ws/src/nav_main' returned '0': PYTHONPATH=/home/dev/HomeDirect_ws/build/nav_main/prefix_override:/home/dev/HomeDirect_ws/install/nav_main/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/nav_main build --build-base /home/dev/HomeDirect_ws/build/nav_main/build install --record /home/dev/HomeDirect_ws/build/nav_main/install.log --single-version-externally-managed

@@ -1,0 +1,31 @@
+[1.085s] Invoking command in '/home/dev/HomeDirect_ws/src/nav_main': PYTHONPATH=/home/dev/HomeDirect_ws/build/nav_main/prefix_override:/home/dev/HomeDirect_ws/install/nav_main/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/nav_main build --build-base /home/dev/HomeDirect_ws/build/nav_main/build install --record /home/dev/HomeDirect_ws/build/nav_main/install.log --single-version-externally-managed
+[1.478s] running egg_info
+[1.479s] writing ../../build/nav_main/nav_main.egg-info/PKG-INFO
+[1.480s] writing dependency_links to ../../build/nav_main/nav_main.egg-info/dependency_links.txt
+[1.480s] writing entry points to ../../build/nav_main/nav_main.egg-info/entry_points.txt
+[1.480s] writing requirements to ../../build/nav_main/nav_main.egg-info/requires.txt
+[1.481s] writing top-level names to ../../build/nav_main/nav_main.egg-info/top_level.txt
+[1.484s] reading manifest file '../../build/nav_main/nav_main.egg-info/SOURCES.txt'
+[1.485s] writing manifest file '../../build/nav_main/nav_main.egg-info/SOURCES.txt'
+[1.485s] running build
+[1.485s] running build_py
+[1.486s] copying nav_main/__init__.py -> /home/dev/HomeDirect_ws/build/nav_main/build/lib/nav_main
+[1.486s] copying nav_main/controller_main.py -> /home/dev/HomeDirect_ws/build/nav_main/build/lib/nav_main
+[1.486s] running install
+[1.486s] /usr/lib/python3/dist-packages/setuptools/command/install.py:34: SetuptoolsDeprecationWarning: setup.py install is deprecated. Use build and pip and other standards-based tools.
+[1.486s]   warnings.warn(
+[1.487s] running install_lib
+[1.488s] copying /home/dev/HomeDirect_ws/build/nav_main/build/lib/nav_main/__init__.py -> /home/dev/HomeDirect_ws/install/nav_main/lib/python3.10/site-packages/nav_main
+[1.488s] copying /home/dev/HomeDirect_ws/build/nav_main/build/lib/nav_main/controller_main.py -> /home/dev/HomeDirect_ws/install/nav_main/lib/python3.10/site-packages/nav_main
+[1.489s] byte-compiling /home/dev/HomeDirect_ws/install/nav_main/lib/python3.10/site-packages/nav_main/__init__.py to __init__.cpython-310.pyc
+[1.490s] byte-compiling /home/dev/HomeDirect_ws/install/nav_main/lib/python3.10/site-packages/nav_main/controller_main.py to controller_main.cpython-310.pyc
+[1.490s] running install_data
+[1.491s] copying resource/nav_main -> /home/dev/HomeDirect_ws/install/nav_main/share/ament_index/resource_index/packages
+[1.492s] copying package.xml -> /home/dev/HomeDirect_ws/install/nav_main/share/nav_main
+[1.492s] running install_egg_info
+[1.494s] removing '/home/dev/HomeDirect_ws/install/nav_main/lib/python3.10/site-packages/nav_main-0.0.0-py3.10.egg-info' (and everything under it)
+[1.495s] Copying ../../build/nav_main/nav_main.egg-info to /home/dev/HomeDirect_ws/install/nav_main/lib/python3.10/site-packages/nav_main-0.0.0-py3.10.egg-info
+[1.496s] running install_scripts
+[1.533s] Installing controller_main script to /home/dev/HomeDirect_ws/install/nav_main/lib/nav_main
+[1.534s] writing list of installed files to '/home/dev/HomeDirect_ws/build/nav_main/install.log'
+[1.598s] Invoked command in '/home/dev/HomeDirect_ws/src/nav_main' returned '0': PYTHONPATH=/home/dev/HomeDirect_ws/build/nav_main/prefix_override:/home/dev/HomeDirect_ws/install/nav_main/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/nav_main build --build-base /home/dev/HomeDirect_ws/build/nav_main/build install --record /home/dev/HomeDirect_ws/build/nav_main/install.log --single-version-externally-managed

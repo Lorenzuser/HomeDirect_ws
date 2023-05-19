@@ -1,0 +1,86 @@
+[0.034s] Invoking command in '/home/dev/HomeDirect_ws/build/turtlebot3_node': AMENT_PREFIX_PATH=/home/dev/HomeDirect_ws/install/turtlebot3_msgs:/home/dev/HomeDirect_ws/install/dynamixel_sdk:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/dev/HomeDirect_ws/install/turtlebot3_msgs:/home/dev/HomeDirect_ws/install/dynamixel_sdk:/home/dev/aws_ws/navigation_tb3/install/navigation_tb3:/home/dev/HomeDirect_ws/install/nav_main:/opt/ros/humble LD_LIBRARY_PATH=/home/dev/HomeDirect_ws/install/turtlebot3_msgs/lib:/home/dev/HomeDirect_ws/install/dynamixel_sdk/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/dev/HomeDirect_ws/install/turtlebot3_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake /home/dev/HomeDirect_ws/src/turtlebot3/turtlebot3_node -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/dev/HomeDirect_ws/install/turtlebot3_node
+[0.129s] -- The C compiler identification is GNU 11.3.0
+[0.238s] -- The CXX compiler identification is GNU 11.3.0
+[0.250s] -- Detecting C compiler ABI info
+[0.365s] -- Detecting C compiler ABI info - done
+[0.378s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.379s] -- Detecting C compile features
+[0.379s] -- Detecting C compile features - done
+[0.385s] -- Detecting CXX compiler ABI info
+[0.518s] -- Detecting CXX compiler ABI info - done
+[0.545s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.546s] -- Detecting CXX compile features
+[0.548s] -- Detecting CXX compile features - done
+[0.556s] -- Found ament_cmake: 1.3.4 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.926s] -- Found Python3: /usr/bin/python3.10 (found version "3.10.6") found components: Interpreter 
+[1.054s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[1.141s] -- Found dynamixel_sdk: 3.7.60 (/home/dev/HomeDirect_ws/install/dynamixel_sdk/share/dynamixel_sdk/cmake)
+[1.146s] -- Found geometry_msgs: 4.2.3 (/opt/ros/humble/share/geometry_msgs/cmake)
+[1.222s] -- Found rosidl_generator_c: 3.1.4 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[1.233s] -- Found rosidl_adapter: 3.1.4 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[1.249s] -- Found rosidl_generator_cpp: 3.1.4 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[1.277s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[1.315s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[1.548s] -- Found message_filters: 4.3.3 (/opt/ros/humble/share/message_filters/cmake)
+[1.672s] -- Found rmw_implementation_cmake: 6.1.1 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[1.677s] -- Found rmw_fastrtps_cpp: 6.2.2 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[1.894s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  
+[1.949s] -- Found FastRTPS: /opt/ros/humble/include  
+[2.041s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[2.061s] -- Looking for pthread.h
+[2.191s] -- Looking for pthread.h - found
+[2.192s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[2.340s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+[2.342s] -- Found Threads: TRUE  
+[2.602s] -- Found nav_msgs: 4.2.3 (/opt/ros/humble/share/nav_msgs/cmake)
+[2.768s] -- Found sensor_msgs: 4.2.3 (/opt/ros/humble/share/sensor_msgs/cmake)
+[2.938s] -- Found std_srvs: 4.2.3 (/opt/ros/humble/share/std_srvs/cmake)
+[2.980s] -- Found tf2: 0.25.2 (/opt/ros/humble/share/tf2/cmake)
+[3.009s] -- Found tf2_ros: 0.25.2 (/opt/ros/humble/share/tf2_ros/cmake)
+[3.666s] -- Found turtlebot3_msgs: 2.2.3 (/home/dev/HomeDirect_ws/install/turtlebot3_msgs/share/turtlebot3_msgs/cmake)
+[3.965s] -- Configuring done
+[4.000s] -- Generating done
+[4.004s] -- Build files have been written to: /home/dev/HomeDirect_ws/build/turtlebot3_node
+[4.024s] Invoked command in '/home/dev/HomeDirect_ws/build/turtlebot3_node' returned '0': AMENT_PREFIX_PATH=/home/dev/HomeDirect_ws/install/turtlebot3_msgs:/home/dev/HomeDirect_ws/install/dynamixel_sdk:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/dev/HomeDirect_ws/install/turtlebot3_msgs:/home/dev/HomeDirect_ws/install/dynamixel_sdk:/home/dev/aws_ws/navigation_tb3/install/navigation_tb3:/home/dev/HomeDirect_ws/install/nav_main:/opt/ros/humble LD_LIBRARY_PATH=/home/dev/HomeDirect_ws/install/turtlebot3_msgs/lib:/home/dev/HomeDirect_ws/install/dynamixel_sdk/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/dev/HomeDirect_ws/install/turtlebot3_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake /home/dev/HomeDirect_ws/src/turtlebot3/turtlebot3_node -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/dev/HomeDirect_ws/install/turtlebot3_node
+[4.028s] Invoking command in '/home/dev/HomeDirect_ws/build/turtlebot3_node': AMENT_PREFIX_PATH=/home/dev/HomeDirect_ws/install/turtlebot3_msgs:/home/dev/HomeDirect_ws/install/dynamixel_sdk:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/dev/HomeDirect_ws/install/turtlebot3_msgs:/home/dev/HomeDirect_ws/install/dynamixel_sdk:/home/dev/aws_ws/navigation_tb3/install/navigation_tb3:/home/dev/HomeDirect_ws/install/nav_main:/opt/ros/humble LD_LIBRARY_PATH=/home/dev/HomeDirect_ws/install/turtlebot3_msgs/lib:/home/dev/HomeDirect_ws/install/dynamixel_sdk/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/dev/HomeDirect_ws/install/turtlebot3_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/dev/HomeDirect_ws/build/turtlebot3_node -- -j8 -l8
+[4.129s] [ 21%] [32mBuilding CXX object CMakeFiles/turtlebot3_node_lib.dir/src/dynamixel_sdk_wrapper.cpp.o[0m
+[4.130s] [ 21%] [32mBuilding CXX object CMakeFiles/turtlebot3_node_lib.dir/src/turtlebot3.cpp.o[0m
+[4.130s] [ 21%] [32mBuilding CXX object CMakeFiles/turtlebot3_node_lib.dir/src/devices/sound.cpp.o[0m
+[4.132s] [ 35%] [32mBuilding CXX object CMakeFiles/turtlebot3_node_lib.dir/src/sensors/battery_state.cpp.o[0m
+[4.132s] [ 35%] [32mBuilding CXX object CMakeFiles/turtlebot3_node_lib.dir/src/devices/reset.cpp.o[0m
+[4.137s] [ 42%] [32mBuilding CXX object CMakeFiles/turtlebot3_node_lib.dir/src/diff_drive_controller.cpp.o[0m
+[4.137s] [ 50%] [32mBuilding CXX object CMakeFiles/turtlebot3_node_lib.dir/src/odometry.cpp.o[0m
+[4.151s] [ 57%] [32mBuilding CXX object CMakeFiles/turtlebot3_node_lib.dir/src/devices/motor_power.cpp.o[0m
+[6.279s] [ 64%] [32mBuilding CXX object CMakeFiles/turtlebot3_node_lib.dir/src/sensors/imu.cpp.o[0m
+[17.624s] [ 71%] [32mBuilding CXX object CMakeFiles/turtlebot3_node_lib.dir/src/sensors/joint_state.cpp.o[0m
+[19.969s] [ 78%] [32mBuilding CXX object CMakeFiles/turtlebot3_node_lib.dir/src/sensors/sensor_state.cpp.o[0m
+[40.252s] [ 85%] [32m[1mLinking CXX static library libturtlebot3_node_lib.a[0m
+[41.430s] [ 85%] Built target turtlebot3_node_lib
+[41.474s] [ 92%] [32mBuilding CXX object CMakeFiles/turtlebot3_ros.dir/src/node_main.cpp.o[0m
+[47.948s] [100%] [32m[1mLinking CXX executable turtlebot3_ros[0m
+[52.290s] [100%] Built target turtlebot3_ros
+[52.315s] Invoked command in '/home/dev/HomeDirect_ws/build/turtlebot3_node' returned '0': AMENT_PREFIX_PATH=/home/dev/HomeDirect_ws/install/turtlebot3_msgs:/home/dev/HomeDirect_ws/install/dynamixel_sdk:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/dev/HomeDirect_ws/install/turtlebot3_msgs:/home/dev/HomeDirect_ws/install/dynamixel_sdk:/home/dev/aws_ws/navigation_tb3/install/navigation_tb3:/home/dev/HomeDirect_ws/install/nav_main:/opt/ros/humble LD_LIBRARY_PATH=/home/dev/HomeDirect_ws/install/turtlebot3_msgs/lib:/home/dev/HomeDirect_ws/install/dynamixel_sdk/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/dev/HomeDirect_ws/install/turtlebot3_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/dev/HomeDirect_ws/build/turtlebot3_node -- -j8 -l8
+[52.396s] Invoking command in '/home/dev/HomeDirect_ws/build/turtlebot3_node': AMENT_PREFIX_PATH=/home/dev/HomeDirect_ws/install/turtlebot3_msgs:/home/dev/HomeDirect_ws/install/dynamixel_sdk:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/dev/HomeDirect_ws/install/turtlebot3_msgs:/home/dev/HomeDirect_ws/install/dynamixel_sdk:/home/dev/aws_ws/navigation_tb3/install/navigation_tb3:/home/dev/HomeDirect_ws/install/nav_main:/opt/ros/humble LD_LIBRARY_PATH=/home/dev/HomeDirect_ws/install/turtlebot3_msgs/lib:/home/dev/HomeDirect_ws/install/dynamixel_sdk/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/dev/HomeDirect_ws/install/turtlebot3_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --install /home/dev/HomeDirect_ws/build/turtlebot3_node
+[52.406s] -- Install configuration: ""
+[52.407s] -- Execute custom install script
+[52.408s] -- Symlinking: /home/dev/HomeDirect_ws/install/turtlebot3_node/share/turtlebot3_node/param/burger.yaml
+[52.422s] -- Symlinking: /home/dev/HomeDirect_ws/install/turtlebot3_node/share/turtlebot3_node/param/waffle.yaml
+[52.437s] -- Symlinking: /home/dev/HomeDirect_ws/install/turtlebot3_node/share/turtlebot3_node/param/waffle_pi.yaml
+[52.458s] -- Symlinking: /home/dev/HomeDirect_ws/install/turtlebot3_node/lib/turtlebot3_node/turtlebot3_ros
+[52.473s] -- Symlinking: /home/dev/HomeDirect_ws/install/turtlebot3_node/share/ament_index/resource_index/package_run_dependencies/turtlebot3_node
+[52.494s] -- Symlinking: /home/dev/HomeDirect_ws/install/turtlebot3_node/share/ament_index/resource_index/parent_prefix_path/turtlebot3_node
+[52.512s] -- Symlinking: /home/dev/HomeDirect_ws/install/turtlebot3_node/share/turtlebot3_node/environment/ament_prefix_path.sh
+[52.530s] -- Symlinking: /home/dev/HomeDirect_ws/install/turtlebot3_node/share/turtlebot3_node/environment/ament_prefix_path.dsv
+[52.553s] -- Symlinking: /home/dev/HomeDirect_ws/install/turtlebot3_node/share/turtlebot3_node/environment/path.sh
+[52.572s] -- Symlinking: /home/dev/HomeDirect_ws/install/turtlebot3_node/share/turtlebot3_node/environment/path.dsv
+[52.589s] -- Symlinking: /home/dev/HomeDirect_ws/install/turtlebot3_node/share/turtlebot3_node/local_setup.bash
+[52.607s] -- Symlinking: /home/dev/HomeDirect_ws/install/turtlebot3_node/share/turtlebot3_node/local_setup.sh
+[52.624s] -- Symlinking: /home/dev/HomeDirect_ws/install/turtlebot3_node/share/turtlebot3_node/local_setup.zsh
+[52.643s] -- Symlinking: /home/dev/HomeDirect_ws/install/turtlebot3_node/share/turtlebot3_node/local_setup.dsv
+[52.662s] -- Symlinking: /home/dev/HomeDirect_ws/install/turtlebot3_node/share/turtlebot3_node/package.dsv
+[52.680s] -- Symlinking: /home/dev/HomeDirect_ws/install/turtlebot3_node/share/ament_index/resource_index/packages/turtlebot3_node
+[52.693s] -- Symlinking: /home/dev/HomeDirect_ws/install/turtlebot3_node/share/turtlebot3_node/cmake/ament_cmake_export_include_directories-extras.cmake
+[52.713s] -- Symlinking: /home/dev/HomeDirect_ws/install/turtlebot3_node/share/turtlebot3_node/cmake/turtlebot3_nodeConfig.cmake
+[52.733s] -- Symlinking: /home/dev/HomeDirect_ws/install/turtlebot3_node/share/turtlebot3_node/cmake/turtlebot3_nodeConfig-version.cmake
+[52.753s] -- Symlinking: /home/dev/HomeDirect_ws/install/turtlebot3_node/share/turtlebot3_node/package.xml
+[52.782s] Invoked command in '/home/dev/HomeDirect_ws/build/turtlebot3_node' returned '0': AMENT_PREFIX_PATH=/home/dev/HomeDirect_ws/install/turtlebot3_msgs:/home/dev/HomeDirect_ws/install/dynamixel_sdk:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/dev/HomeDirect_ws/install/turtlebot3_msgs:/home/dev/HomeDirect_ws/install/dynamixel_sdk:/home/dev/aws_ws/navigation_tb3/install/navigation_tb3:/home/dev/HomeDirect_ws/install/nav_main:/opt/ros/humble LD_LIBRARY_PATH=/home/dev/HomeDirect_ws/install/turtlebot3_msgs/lib:/home/dev/HomeDirect_ws/install/dynamixel_sdk/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/dev/HomeDirect_ws/install/turtlebot3_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --install /home/dev/HomeDirect_ws/build/turtlebot3_node

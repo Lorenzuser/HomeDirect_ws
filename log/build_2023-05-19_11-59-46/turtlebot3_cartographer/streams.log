@@ -1,0 +1,45 @@
+[0.103s] Invoking command in '/home/dev/HomeDirect_ws/build/turtlebot3_cartographer': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/dev/HomeDirect_ws/install/nav_main:/opt/ros/humble /usr/bin/cmake /home/dev/HomeDirect_ws/src/turtlebot3/turtlebot3_cartographer -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/dev/HomeDirect_ws/install/turtlebot3_cartographer
+[1.952s] -- The C compiler identification is GNU 11.3.0
+[1.953s] -- The CXX compiler identification is GNU 11.3.0
+[1.953s] -- Detecting C compiler ABI info
+[1.953s] -- Detecting C compiler ABI info - done
+[1.954s] -- Check for working C compiler: /usr/bin/cc - skipped
+[1.954s] -- Detecting C compile features
+[1.954s] -- Detecting C compile features - done
+[1.954s] -- Detecting CXX compiler ABI info
+[1.954s] -- Detecting CXX compiler ABI info - done
+[1.954s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[1.955s] -- Detecting CXX compile features
+[1.955s] -- Detecting CXX compile features - done
+[1.955s] -- Found ament_cmake: 1.3.4 (/opt/ros/humble/share/ament_cmake/cmake)
+[1.955s] -- Found Python3: /usr/bin/python3.10 (found version "3.10.6") found components: Interpreter 
+[1.955s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[2.053s] -- Configuring done
+[2.061s] -- Generating done
+[2.066s] -- Build files have been written to: /home/dev/HomeDirect_ws/build/turtlebot3_cartographer
+[2.086s] Invoked command in '/home/dev/HomeDirect_ws/build/turtlebot3_cartographer' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/dev/HomeDirect_ws/install/nav_main:/opt/ros/humble /usr/bin/cmake /home/dev/HomeDirect_ws/src/turtlebot3/turtlebot3_cartographer -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/dev/HomeDirect_ws/install/turtlebot3_cartographer
+[2.089s] Invoking command in '/home/dev/HomeDirect_ws/build/turtlebot3_cartographer': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/dev/HomeDirect_ws/install/nav_main:/opt/ros/humble /usr/bin/cmake --build /home/dev/HomeDirect_ws/build/turtlebot3_cartographer -- -j8 -l8
+[2.199s] Invoked command in '/home/dev/HomeDirect_ws/build/turtlebot3_cartographer' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/dev/HomeDirect_ws/install/nav_main:/opt/ros/humble /usr/bin/cmake --build /home/dev/HomeDirect_ws/build/turtlebot3_cartographer -- -j8 -l8
+[2.287s] Invoking command in '/home/dev/HomeDirect_ws/build/turtlebot3_cartographer': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/dev/HomeDirect_ws/install/nav_main:/opt/ros/humble /usr/bin/cmake --install /home/dev/HomeDirect_ws/build/turtlebot3_cartographer
+[2.320s] -- Install configuration: ""
+[2.323s] -- Execute custom install script
+[2.323s] -- Symlinking: /home/dev/HomeDirect_ws/install/turtlebot3_cartographer/share/turtlebot3_cartographer/config/turtlebot3_lds_2d.lua
+[2.352s] -- Symlinking: /home/dev/HomeDirect_ws/install/turtlebot3_cartographer/share/turtlebot3_cartographer/launch/cartographer.launch.py
+[2.387s] -- Symlinking: /home/dev/HomeDirect_ws/install/turtlebot3_cartographer/share/turtlebot3_cartographer/launch/occupancy_grid.launch.py
+[2.420s] -- Symlinking: /home/dev/HomeDirect_ws/install/turtlebot3_cartographer/share/turtlebot3_cartographer/rviz/tb3_cartographer.rviz
+[2.473s] -- Symlinking: /home/dev/HomeDirect_ws/install/turtlebot3_cartographer/share/ament_index/resource_index/package_run_dependencies/turtlebot3_cartographer
+[2.521s] -- Symlinking: /home/dev/HomeDirect_ws/install/turtlebot3_cartographer/share/ament_index/resource_index/parent_prefix_path/turtlebot3_cartographer
+[2.569s] -- Symlinking: /home/dev/HomeDirect_ws/install/turtlebot3_cartographer/share/turtlebot3_cartographer/environment/ament_prefix_path.sh
+[2.630s] -- Symlinking: /home/dev/HomeDirect_ws/install/turtlebot3_cartographer/share/turtlebot3_cartographer/environment/ament_prefix_path.dsv
+[2.693s] -- Symlinking: /home/dev/HomeDirect_ws/install/turtlebot3_cartographer/share/turtlebot3_cartographer/environment/path.sh
+[2.754s] -- Symlinking: /home/dev/HomeDirect_ws/install/turtlebot3_cartographer/share/turtlebot3_cartographer/environment/path.dsv
+[2.826s] -- Symlinking: /home/dev/HomeDirect_ws/install/turtlebot3_cartographer/share/turtlebot3_cartographer/local_setup.bash
+[2.889s] -- Symlinking: /home/dev/HomeDirect_ws/install/turtlebot3_cartographer/share/turtlebot3_cartographer/local_setup.sh
+[2.983s] -- Symlinking: /home/dev/HomeDirect_ws/install/turtlebot3_cartographer/share/turtlebot3_cartographer/local_setup.zsh
+[3.055s] -- Symlinking: /home/dev/HomeDirect_ws/install/turtlebot3_cartographer/share/turtlebot3_cartographer/local_setup.dsv
+[3.080s] -- Symlinking: /home/dev/HomeDirect_ws/install/turtlebot3_cartographer/share/turtlebot3_cartographer/package.dsv
+[3.130s] -- Symlinking: /home/dev/HomeDirect_ws/install/turtlebot3_cartographer/share/ament_index/resource_index/packages/turtlebot3_cartographer
+[3.175s] -- Symlinking: /home/dev/HomeDirect_ws/install/turtlebot3_cartographer/share/turtlebot3_cartographer/cmake/turtlebot3_cartographerConfig.cmake
+[3.247s] -- Symlinking: /home/dev/HomeDirect_ws/install/turtlebot3_cartographer/share/turtlebot3_cartographer/cmake/turtlebot3_cartographerConfig-version.cmake
+[3.305s] -- Symlinking: /home/dev/HomeDirect_ws/install/turtlebot3_cartographer/share/turtlebot3_cartographer/package.xml
+[3.365s] Invoked command in '/home/dev/HomeDirect_ws/build/turtlebot3_cartographer' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/dev/HomeDirect_ws/install/nav_main:/opt/ros/humble /usr/bin/cmake --install /home/dev/HomeDirect_ws/build/turtlebot3_cartographer

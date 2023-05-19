@@ -1,0 +1,27 @@
+[2.256s] Invoking command in '/home/dev/HomeDirect_ws/build/nav_main': PYTHONPATH=/home/dev/HomeDirect_ws/build/nav_main/prefix_override:/home/dev/HomeDirect_ws/install/nav_main/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --editable --build-directory /home/dev/HomeDirect_ws/build/nav_main/build --no-deps install_data
+[2.959s] running develop
+[2.959s] /usr/lib/python3/dist-packages/setuptools/command/easy_install.py:158: EasyInstallDeprecationWarning: easy_install command is deprecated. Use build and pip and other standards-based tools.
+[2.960s]   warnings.warn(
+[2.960s] /usr/lib/python3/dist-packages/setuptools/command/install.py:34: SetuptoolsDeprecationWarning: setup.py install is deprecated. Use build and pip and other standards-based tools.
+[2.961s]   warnings.warn(
+[3.080s] /usr/lib/python3/dist-packages/pkg_resources/__init__.py:116: PkgResourcesDeprecationWarning: 1.16.0-unknown is an invalid version and will not be supported in a future release
+[3.080s]   warnings.warn(
+[3.082s] /usr/lib/python3/dist-packages/pkg_resources/__init__.py:116: PkgResourcesDeprecationWarning: 1.1build1 is an invalid version and will not be supported in a future release
+[3.082s]   warnings.warn(
+[3.083s] /usr/lib/python3/dist-packages/pkg_resources/__init__.py:116: PkgResourcesDeprecationWarning: 0.1.43ubuntu1 is an invalid version and will not be supported in a future release
+[3.083s]   warnings.warn(
+[3.318s] running egg_info
+[3.319s] writing nav_main.egg-info/PKG-INFO
+[3.319s] writing dependency_links to nav_main.egg-info/dependency_links.txt
+[3.320s] writing entry points to nav_main.egg-info/entry_points.txt
+[3.320s] writing requirements to nav_main.egg-info/requires.txt
+[3.320s] writing top-level names to nav_main.egg-info/top_level.txt
+[3.325s] reading manifest file 'nav_main.egg-info/SOURCES.txt'
+[3.327s] writing manifest file 'nav_main.egg-info/SOURCES.txt'
+[3.331s] running build_ext
+[3.332s] Creating /home/dev/HomeDirect_ws/install/nav_main/lib/python3.10/site-packages/nav-main.egg-link (link to .)
+[3.335s] Installing controller_main script to /home/dev/HomeDirect_ws/install/nav_main/lib/nav_main
+[3.336s] 
+[3.336s] Installed /home/dev/HomeDirect_ws/build/nav_main
+[3.336s] running install_data
+[3.460s] Invoked command in '/home/dev/HomeDirect_ws/build/nav_main' returned '0': PYTHONPATH=/home/dev/HomeDirect_ws/build/nav_main/prefix_override:/home/dev/HomeDirect_ws/install/nav_main/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --editable --build-directory /home/dev/HomeDirect_ws/build/nav_main/build --no-deps install_data

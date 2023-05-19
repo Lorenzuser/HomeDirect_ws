@@ -1,0 +1,37 @@
+[1.220s] Invoking command in '/home/dev/HomeDirect_ws/build/turtlebot3_example': AMENT_PREFIX_PATH=/home/dev/HomeDirect_ws/install/turtlebot3_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/dev/HomeDirect_ws/install/turtlebot3_msgs:${CMAKE_PREFIX_PATH} LD_LIBRARY_PATH=/home/dev/HomeDirect_ws/install/turtlebot3_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/dev/HomeDirect_ws/build/turtlebot3_example/prefix_override:/home/dev/HomeDirect_ws/install/turtlebot3_example/lib/python3.10/site-packages:/home/dev/HomeDirect_ws/install/turtlebot3_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --editable --build-directory /home/dev/HomeDirect_ws/build/turtlebot3_example/build --no-deps install_data
+[1.703s] running develop
+[1.704s] /usr/lib/python3/dist-packages/setuptools/command/easy_install.py:158: EasyInstallDeprecationWarning: easy_install command is deprecated. Use build and pip and other standards-based tools.
+[1.704s]   warnings.warn(
+[1.707s] /usr/lib/python3/dist-packages/setuptools/command/install.py:34: SetuptoolsDeprecationWarning: setup.py install is deprecated. Use build and pip and other standards-based tools.
+[1.708s]   warnings.warn(
+[1.808s] /usr/lib/python3/dist-packages/pkg_resources/__init__.py:116: PkgResourcesDeprecationWarning: 1.16.0-unknown is an invalid version and will not be supported in a future release
+[1.809s]   warnings.warn(
+[1.810s] /usr/lib/python3/dist-packages/pkg_resources/__init__.py:116: PkgResourcesDeprecationWarning: 1.1build1 is an invalid version and will not be supported in a future release
+[1.810s]   warnings.warn(
+[1.810s] /usr/lib/python3/dist-packages/pkg_resources/__init__.py:116: PkgResourcesDeprecationWarning: 0.1.43ubuntu1 is an invalid version and will not be supported in a future release
+[1.810s]   warnings.warn(
+[1.996s] running egg_info
+[1.996s] creating turtlebot3_example.egg-info
+[1.996s] writing turtlebot3_example.egg-info/PKG-INFO
+[1.997s] writing dependency_links to turtlebot3_example.egg-info/dependency_links.txt
+[1.997s] writing entry points to turtlebot3_example.egg-info/entry_points.txt
+[1.997s] writing requirements to turtlebot3_example.egg-info/requires.txt
+[1.998s] writing top-level names to turtlebot3_example.egg-info/top_level.txt
+[1.998s] writing manifest file 'turtlebot3_example.egg-info/SOURCES.txt'
+[2.003s] reading manifest file 'turtlebot3_example.egg-info/SOURCES.txt'
+[2.004s] writing manifest file 'turtlebot3_example.egg-info/SOURCES.txt'
+[2.007s] running build_ext
+[2.008s] Creating /home/dev/HomeDirect_ws/install/turtlebot3_example/lib/python3.10/site-packages/turtlebot3-example.egg-link (link to .)
+[2.010s] Installing turtlebot3_obstacle_detection script to /home/dev/HomeDirect_ws/install/turtlebot3_example/lib/turtlebot3_example
+[2.010s] Installing turtlebot3_patrol_client script to /home/dev/HomeDirect_ws/install/turtlebot3_example/lib/turtlebot3_example
+[2.010s] Installing turtlebot3_patrol_server script to /home/dev/HomeDirect_ws/install/turtlebot3_example/lib/turtlebot3_example
+[2.011s] Installing turtlebot3_position_control script to /home/dev/HomeDirect_ws/install/turtlebot3_example/lib/turtlebot3_example
+[2.011s] 
+[2.011s] Installed /home/dev/HomeDirect_ws/build/turtlebot3_example
+[2.011s] running install_data
+[2.012s] creating /home/dev/HomeDirect_ws/install/turtlebot3_example/share/ament_index
+[2.012s] creating /home/dev/HomeDirect_ws/install/turtlebot3_example/share/ament_index/resource_index
+[2.012s] creating /home/dev/HomeDirect_ws/install/turtlebot3_example/share/ament_index/resource_index/packages
+[2.012s] copying resource/turtlebot3_example -> /home/dev/HomeDirect_ws/install/turtlebot3_example/share/ament_index/resource_index/packages
+[2.012s] copying package.xml -> /home/dev/HomeDirect_ws/install/turtlebot3_example/share/turtlebot3_example
+[2.116s] Invoked command in '/home/dev/HomeDirect_ws/build/turtlebot3_example' returned '0': AMENT_PREFIX_PATH=/home/dev/HomeDirect_ws/install/turtlebot3_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/dev/HomeDirect_ws/install/turtlebot3_msgs:${CMAKE_PREFIX_PATH} LD_LIBRARY_PATH=/home/dev/HomeDirect_ws/install/turtlebot3_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/dev/HomeDirect_ws/build/turtlebot3_example/prefix_override:/home/dev/HomeDirect_ws/install/turtlebot3_example/lib/python3.10/site-packages:/home/dev/HomeDirect_ws/install/turtlebot3_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --editable --build-directory /home/dev/HomeDirect_ws/build/turtlebot3_example/build --no-deps install_data
