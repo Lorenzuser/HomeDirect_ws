@@ -1,0 +1,4 @@
+# Ignoring compling folders
+build/
+log/
+__pycache__/
