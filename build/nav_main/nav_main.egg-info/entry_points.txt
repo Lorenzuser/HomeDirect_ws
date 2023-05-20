@@ -1,3 +1,0 @@
-[console_scripts]
-controller_main = nav_main.controller_main:main
-
