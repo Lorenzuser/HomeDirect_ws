@@ -3,3 +3,7 @@ build/
 log/
 __pycache__/
 lib/
+.vscode/
+turtlebot3/
+turtlebot3_msgs/
+turtlebot3_simulation/
