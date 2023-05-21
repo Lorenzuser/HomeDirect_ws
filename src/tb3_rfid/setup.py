@@ -20,8 +20,8 @@ setup(
     tests_require=['pytest'],
     entry_points={
         'console_scripts': [
-            "rfid_publisher = tb3_rfid.publish_taginfo_node.py:main",
-            "rfid_subscriber = tb3_rfid.taginfo_subscriber.py:main" ,
+            "rfid_publisher = tb3_rfid.publish_taginfo_node:main",
+            "rfid_subscriber = tb3_rfid.taginfo_subscriber:main" ,
         ],
     },
 )
