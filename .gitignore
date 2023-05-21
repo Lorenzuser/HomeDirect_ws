@@ -8,8 +8,4 @@ turtlebot3/
 turtlebot3_msgs/
 turtlebot3_simulations/
 DynamixelSDK/
-<<<<<<< HEAD
 install/
-=======
-install/
->>>>>>> 623041c (up gitignre)
