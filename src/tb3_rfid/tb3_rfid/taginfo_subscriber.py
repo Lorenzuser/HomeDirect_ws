@@ -19,6 +19,7 @@ class TaginfoSubscriber(Node):
             self.taginfo_callback, # reference "output" function
             10) # queue size
         self.subscription  # prevent unused variable warning
+        self.get_logger().info("Taginfo subscriber has been started")
 
     # Print the received tag info to the terminal
     def taginfo_callback(self, msg):
