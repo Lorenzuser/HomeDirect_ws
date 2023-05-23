@@ -47,7 +47,7 @@ class TagInfoNode(Node):
             # publish message
             self.publisher_.publish(msg)
             # print tag info 
-            self.get_logger().info('Tag ID: %s' % id)
+            self.get_logger().info('Tag ID: %s' % id + ' Tag text: %s' % text)
             # print Node Status
             self.get_logger().info("Tag info published")
 
