@@ -11,6 +11,7 @@
 
   <exec_depend>nav_main</exec_depend>
   <exec_depend>tb3_rfid</exec_depend>
+  <exec_depend>turtlebot3_bringup</exec_depend>
 
   <test_depend>ament_lint_auto</test_depend>
   <test_depend>ament_lint_common</test_depend>
