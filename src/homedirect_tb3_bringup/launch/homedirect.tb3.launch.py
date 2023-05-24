@@ -15,7 +15,7 @@ def generate_launch_description():
         executable="rfid_publisher",
     )
 
-    turtlebot3_launch_file = IncludeLaunchDescription(
+    turtlebot3_launch_file = IncludeLaunchDescription( # Das was ld.add_action referenziert
         PythonLaunchDescriptionSource(
             os.path.join(get_package_share_directory('turtlebot3_bringup'), # Package-Pfad
                          'launch/robot.launch.py') # Pfad zur robot.launch.py Datei
