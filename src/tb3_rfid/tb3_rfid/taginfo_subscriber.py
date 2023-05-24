@@ -15,7 +15,7 @@ class TaginfoSubscriber(Node):
         super().__init__('taginfo_subscriber')
         self.subscription = self.create_subscription(
             String, # msg type
-            'taginfo', # topic
+            'tag_info', # topic
             self.taginfo_callback, # reference "output" function
             10) # queue size
         self.subscription  # prevent unused variable warning
