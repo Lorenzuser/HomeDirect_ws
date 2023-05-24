@@ -1,6 +1,8 @@
 from launch import LaunchDescription
 from launch_ros.actions import Node
 
+# Launch file for the homedirect project
+# Starts all the relevant self made nodes as well as the Bringup for the Turtlebot3
 def generate_launch_description():
     ld = LaunchDescription()
 
@@ -9,6 +11,8 @@ def generate_launch_description():
         executable="rfid_publisher",
     )
 
+
+    # Die Node die auf dem PC laufen soll
     commander_node = Node(
         package="nav_main",
         executable="commander",
