@@ -22,8 +22,8 @@ def generate_launch_description():
         )
     )
 
-
     # Die Node die auf dem PC laufen soll müsste enfernt werden
+
     commander_node = Node(
         package="nav_main",
         executable="commander",
