@@ -35,8 +35,8 @@ def generate_launch_description():
     #)
 
     ld.add_action(rfid_publisher_node)
-    ld.add_action(commander_node)
-    ld.add_action(controller_main_node)
+    # ld.add_action(commander_node)
+    # ld.add_action(controller_main_node)
     ld.add_action(turtlebot3_launch_file)
 
     return ld

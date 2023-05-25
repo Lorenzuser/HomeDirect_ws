@@ -24,3 +24,7 @@ ros2 run nav2_map_server map_saver_cli -f ~/HomeDirect_ws/config/Maps/
 ```
 ros2 launch turtlebot3_navigation2 navigation2.launch.py use_sim:=True map:=/home/dev/HomeDirect_ws/config/Maps/Maps.yaml
 ```
+- Set Init Pose(Change accordingly)
+```
+ros2 topic pub /initialpose geometry_msgs/msg/PoseWithCovarianceStamped "{header: {stamp: {sec: 0}, frame_id: 'map'}, pose: {pose: {position: {x: 3.45, y: 2.15, z: 0.0}, orientation: {z: 1.0, w: 0.0}}}}"
+```
