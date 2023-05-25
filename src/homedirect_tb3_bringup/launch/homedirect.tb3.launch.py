@@ -24,15 +24,15 @@ def generate_launch_description():
 
     # Die Node die auf dem PC laufen soll müsste enfernt werden
 
-    commander_node = Node(
-        package="nav_main",
-        executable="commander",
-    )
+    #commander_node = Node(
+    #    package="nav_main",
+    #    executable="commander",
+    #)
 
-    controller_main_node = Node(
-        package="nav_main",
-        executable="controller_main",
-    )
+    #controller_main_node = Node(
+    #    package="nav_main",
+    #    executable="controller_main",
+    #)
 
     ld.add_action(rfid_publisher_node)
     ld.add_action(commander_node)
