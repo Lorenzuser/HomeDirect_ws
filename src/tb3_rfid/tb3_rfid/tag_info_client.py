@@ -22,19 +22,19 @@ class TagInfoClient(Node):
         self.client = self.create_client(String, 'tag_info_service') # client is called 'tag_info_service'
         while not self.client.wait_for_service(timeout_sec=1.0):
             self.get_logger().info('Service not available, waiting again...')
-        self.req = String.Request() # String: msg type
+        self.req = String.Request() # create storrage for the request
         # Log
         self.get_logger().info("Taginfo subscriber has been started")    
 
     # Handle received tag info
     def taginfo_callback(self, msg):
             self.get_logger().info('Received tag info: "%s"' % msg.data)
-            self.req.data = msg.data
+            self.req.data = msg.data # fill the request with the received tag info
             self.future = self.client.call_async(self.req)
-            self.future.add_done_callback(self.taginfo_callback) # Log-Feedback callback
+            self.future.add_done_callback(self.client_callback) # Log-Feedback callback
 
     # Log-Feedback
-    def taginfo_callback(self, future):
+    def client_callback(self, future):
         try:
             response = future.result()
             if response.success:
