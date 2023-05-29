@@ -9,34 +9,45 @@ def main():
     rclpy.init()
     nav = BasicNavigator()
 
+    # Define initial pose #
+
+    # define 1*
     q_x, q_y, q_z, q_w =  tft.quaternion_from_euler(0.0, 0.0, 0.0)
     InitPose = PoseStamped()
     InitPose.header.frame_id = 'map'
     InitPose.header.stamp = nav.get_clock().now().to_msg()
+
     InitPose.pose.position.x = 0.0
     InitPose.pose.position.y = 0.0
     InitPose.pose.position.z = 0.0
+    # see *1 above
     InitPose.pose.orientation.x = q_x
     InitPose.pose.orientation.y = q_y
     InitPose.pose.orientation.z = q_z
     InitPose.pose.orientation.w = q_w
 
-    nav.setInitialPose(InitPose)
+ 
+    nav.setInitialPose(InitPose) # set initial pose
 
     nav.waitUntilNav2Active()
 
-    gq_x, gq_y, gq_z, gq_w =  tft.quaternion_from_euler(0.0, 0.0, 0.0)
-    GoalPose = PoseStamped()
-    GoalPose.header.frame_id = 'map'
+    # Define goal pose #
+
+    # define 2*
+    gq_x, gq_y, gq_z, gq_w =  tft.quaternion_from_euler(0.0, 0.0, 0.0) 
+    GoalPose = PoseStamped() 
+    GoalPose.header.frame_id = 'map' 
 
     GoalPose.pose.position.x = 1.5
     GoalPose.pose.position.y = 0.0
     GoalPose.pose.position.z = 0.0
+    # see 2* above
     GoalPose.pose.orientation.x = gq_x
     GoalPose.pose.orientation.y = gq_y
     GoalPose.pose.orientation.z = gq_z
     GoalPose.pose.orientation.w = gq_w
 
+    # Navigate to goal pose
     nav.goToPose(GoalPose)
 
     while not nav.isTaskComplete():
