@@ -1,0 +1,1 @@
+{'Person': 'Marianne', 'position_x': 0.40639882300097124, 'position_y': -1.6117755811220629}

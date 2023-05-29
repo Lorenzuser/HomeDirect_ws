@@ -18,7 +18,7 @@ ros2 launch nav2_bringup bringup.launch.py use_sim_time:=True map:=~/HomeDirect_
 ```
 - With RViz
 ```
-ros2 launch turtlebot3_navigation2 navigation2.launch.py use_sim:=True map:=~/HomeDirect_ws/config/Maps/tb3_map.yaml
+ros2 launch turtlebot3_navigation2 navigation2.launch.py use_sim:=True map:=/home/dev/HomeDirect_ws/config/Maps/tb3_map.yaml
 ```
 ```
 ros2 launch turtlebot3_cartographer cartographer.launch.py use_sim_time:=True

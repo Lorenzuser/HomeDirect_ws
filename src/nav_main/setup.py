@@ -20,8 +20,12 @@ setup(
     tests_require=['pytest'],
     entry_points={
         'console_scripts': [
-            'controller_main = nav_main.controller_main:main',
-            'commander = nav_main.commander:main'
+            # 'controller_main = nav_main.controller_main:main',
+            'commander = nav_main.commander:main',
+            'service = nav_main.controller_main:main',
+            'client = nav_main.example_client:main',
+            'room_save = nav_main.room_saver:main',            
+
         ],
     },
 )
