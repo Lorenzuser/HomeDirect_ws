@@ -16,17 +16,17 @@ class TagInfoClient(Node):
         super().__init__('tag_info_client') 
         self.subscription = self.create_subscription(
             String, # msg type
-            'tag_info', # topic
-            self.taginfo_callback, # call for the programm to make client requests
+            'tag_info', # topic name
+            self.taginfo_callback, # call sub to make client requests
             10) # queue size
-        self.client = self.create_client(String, 'tag_info_service') # client is called 'tag_info_service'
+        self.client = self.create_client(String, 'tag_info_service') ## client is called 'tag_info_service'
         while not self.client.wait_for_service(timeout_sec=1.0):
             self.get_logger().info('Service not available, waiting again...')
         self.req = String.Request() # create storrage for the request
         # Log
         self.get_logger().info("Taginfo subscriber has been started")    
 
-    # Handle received tag info
+    # Handle received (subed to) tag info
     def taginfo_callback(self, msg):
             self.get_logger().info('Received tag info: "%s"' % msg.data)
             self.req.data = msg.data # fill the request with the received tag info
