@@ -11,7 +11,7 @@ from std_msgs.msg import String
 
 class TagInfoClient(Node):
 
-    # Create Subscriber and Client
+    # Create Subscriber and Client #
     def __init__(self):
         super().__init__('tag_info_client') 
         self.subscription = self.create_subscription(
@@ -26,14 +26,14 @@ class TagInfoClient(Node):
         # Log
         self.get_logger().info("Taginfo subscriber has been started")    
 
-    # Handle received (subed to) tag info
+    # Handle received (subed to) tag info #
     def taginfo_callback(self, msg):
             self.get_logger().info('Received tag info: "%s"' % msg.data)
             self.req.data = msg.data # fill the request with the received tag info
             self.future = self.client.call_async(self.req)
             self.future.add_done_callback(self.client_callback) # Log-Feedback callback
 
-    # Log-Feedback
+    # Log-Feedback #
     def client_callback(self, future):
         try:
             response = future.result()
