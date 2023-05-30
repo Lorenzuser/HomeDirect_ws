@@ -21,18 +21,19 @@ class NameTagSubscriber(Node):
         self.subscription = self.create_subscription(
             String, # msg type
             'tag_info', # topic
-            self.match_goal_callback, # reference "output" function
+            self.set_goal_callback, # reference "output" function
             10) # queue size
         self.subscription  # prevent unused variable warning
         self.minimal_client = MinimalClientAsync()
         self.get_logger().info("Taginfo subscriber has been started")
 
     # Print the received tag info to the terminal
-    def match_goal_callback(self, msg):
+    def set_goal_callback(self, msg):
         self.get_logger().info('RFID read: "%s"' % msg.data)
         # Ermittle Koordinaten die mit Ziel der jeweiligen Person übereinstimmen
         file_content = dict(read_from_file())
         ## Struktur der Datei: {Name: [x, y]} also [Name][Korordinate x/y ]
+        # Name = 'msg.data' = 'text' 
         x = file_content[msg.data][0]
         y = file_content[msg.data][1]
         print(str(x) + " " + str(y))
