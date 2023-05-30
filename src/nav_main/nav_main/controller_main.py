@@ -46,6 +46,7 @@ class MinimalService(Node):
             pass
         print("Task Complete" + str(self.nav.getResult()))
 
+    # This 
     def __init__(self):
         super().__init__('minimal_service')
         self.srv = self.create_service(AddTwoInts, 'add_two_ints', self.navigator)
@@ -53,7 +54,8 @@ class MinimalService(Node):
         print("Setup Complete")
 
     def navigator(self, request, response):
-        self.get_logger().info('Incoming request\na: %d b: %d' % (request.a, request.b))
+        # Definiert in examle_client.py line 47
+        self.get_logger().info('Incoming request\na: %d b: %d' % (request.a, request.b))      
         self.goToPose(request.a / 1000, request.b / 1000)
 
         response.sum = 1

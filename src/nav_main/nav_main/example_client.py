@@ -11,7 +11,7 @@ FILENAME = '/home/dev/HomeDirect_ws/config/' + str(sys.argv[2]) + '.json'
 def read_from_file():
     with open(FILENAME, 'r') as openfile:
         return json.load(openfile)
-    
+
 class MinimalClientAsync(Node):
 
     def __init__(self):
@@ -19,8 +19,9 @@ class MinimalClientAsync(Node):
         self.cli = self.create_client(AddTwoInts, 'add_two_ints')
         while not self.cli.wait_for_service(timeout_sec=100.0):
             self.get_logger().info('service not available, waiting again...')
-        self.req = AddTwoInts.Request()
+        self.req = AddTwoInts.Request() 
 
+    # gewünschte x und y Koordinaten werden an den Server gesendet
     def send_request(self, a, b):
         self.req.a = a
         self.req.b = b
@@ -31,6 +32,7 @@ class MinimalClientAsync(Node):
 
 def main():
     rclpy.init()
+    # Koordinaten zurücksetzen zum Initalisieren
     x = 0
     y = 0
 
@@ -40,7 +42,9 @@ def main():
             x = sys.argv[1]
             y = sys.argv[2]
     except IndexError:
+        # Ermittle Koordinaten die mit Ziel der jeweiligen Person übereinstimmen
         file_content = dict(read_from_file())
+        ## Struktur der Datei: {Name: [x, y]} also [Name][Korordinate x/y ]
         x = file_content[sys.argv[1]][0]
         y = file_content[sys.argv[1]][1]
         print(str(x) + " " + str(y))
