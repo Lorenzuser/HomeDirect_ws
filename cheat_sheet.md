@@ -1,4 +1,4 @@
-# These are some very common commands, which may speed up the testing process, but may are device specific aswell
+# These are some very common commands, which may speed up the testing process, but may be device specific aswell
 ## WS
 - **compile package:** colcon build (--packages-select my_package) (--symlink-install)
 - ros2 topic echo /name = **usable for checking published Data**
