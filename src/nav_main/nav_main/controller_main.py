@@ -46,6 +46,7 @@ class MinimalService(Node):
             pass
         print("Task Complete" + str(self.nav.getResult()))
 
+    # This 
     def __init__(self):
         super().__init__('minimal_service')
         self.srv = self.create_service(AddTwoInts, 'add_two_ints', self.navigator)

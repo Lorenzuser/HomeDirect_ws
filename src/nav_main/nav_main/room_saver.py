@@ -18,6 +18,7 @@ def write_to_file(data):
     with open(FILENAME, "w") as outfile:
         json.dump(data, outfile)
 
+# Sub
 class MapSubscriber(Node):
     def __init__(self):
         self.node = rclpy.create_node('my_subscriber')
@@ -37,6 +38,7 @@ class MapSubscriber(Node):
         position_y = msg.pose.pose.position.y
 
         self.get_logger().info("Position: " + str(position_x) + " , " + str(position_y))
+        
         # Speicher der Position in einer Datei
         content = dict(read_from_file())
   
