@@ -12,11 +12,11 @@
 ```
 ros2 launch turtlebot3_gazebo turtlebot3_world.launch.py
 ```
-Without RViz
+### Without RViz
 ```
 ros2 launch nav2_bringup bringup.launch.py use_sim_time:=True map:=~/HomeDirect_ws/config/Maps/tb3_map.yaml
 ```
-- With RViz
+### With RViz
 ```
 ros2 launch turtlebot3_navigation2 navigation2.launch.py use_sim:=True map:=/home/dev/HomeDirect_ws/config/Maps/tb3_map.yaml
 ```
