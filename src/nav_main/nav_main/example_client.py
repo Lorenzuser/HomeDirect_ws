@@ -13,9 +13,10 @@ def read_from_file():
     with open(FILENAME, 'r') as openfile:
         return json.load(openfile)
 
+## Zielkordinaten festlegen
 class NameTagSubscriber(Node):
 
-    # Subscribes to the 'taginfo' topic
+
     def __init__(self):
         super().__init__('name_tag_subscriber')
         self.subscription = self.create_subscription(
@@ -24,10 +25,9 @@ class NameTagSubscriber(Node):
             self.set_goal_callback, # goal request is send when a message is received
             10) 
         self.subscription  # prevent warnings
-        self.minimal_client = MinimalClientAsync()
+        self.minimal_client = MinimalClientAsync() # "Initialisierung" des Clients
         self.get_logger().info("Taginfo subscriber has been started")
 
-    # Print the received tag info to the terminal
     def set_goal_callback(self, msg):
         self.get_logger().info('RFID read: "%s"' % msg.data)
         # Ermittle Koordinaten die mit Ziel der jeweiligen Person übereinstimmen
@@ -42,6 +42,7 @@ class NameTagSubscriber(Node):
         'Navigation to  %d + %d completed. answer: %d' %
         (x, y, response.sum))
 
+## Navigation zu Zielkoordinaten anfordern
 class MinimalClientAsync(Node):
 
     def __init__(self):
