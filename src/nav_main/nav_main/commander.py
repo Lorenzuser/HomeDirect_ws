@@ -73,6 +73,7 @@ def main():
     shelf_item_pose = PoseStamped()
     shelf_item_pose.header.frame_id = 'map'
     shelf_item_pose.header.stamp = navigator.get_clock().now().to_msg()
+    
     shelf_item_pose.pose.position.x = shelf_positions[request_item_location][0]
     shelf_item_pose.pose.position.y = shelf_positions[request_item_location][1]
     shelf_item_pose.pose.orientation.z = 1.0
