@@ -43,7 +43,7 @@ class TagInfoNode(Node):
             # create message by calling 'String' message type
             msg = String()
             # fill message 
-            msg.data = "ID: " + str(id) + " Text: " + text
+            msg.data = text
             # publish message
             self.publisher_.publish(msg)
             # print tag info 
