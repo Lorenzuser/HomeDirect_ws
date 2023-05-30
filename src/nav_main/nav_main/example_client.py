@@ -19,11 +19,11 @@ class NameTagSubscriber(Node):
     def __init__(self):
         super().__init__('name_tag_subscriber')
         self.subscription = self.create_subscription(
-            String, # msg type
+            String,
             'tag_info', # topic
-            self.set_goal_callback, # reference "output" function
-            10) # queue size
-        self.subscription  # prevent unused variable warning
+            self.set_goal_callback, # goal request is send when a message is received
+            10) 
+        self.subscription  # prevent warnings
         self.minimal_client = MinimalClientAsync()
         self.get_logger().info("Taginfo subscriber has been started")
 
