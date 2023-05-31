@@ -69,27 +69,16 @@ def main():
 
     name_tag_subscriber = NameTagSubscriber()
     minimal_client = MinimalClientAsync()
-    try:
-        if sys.argv[3] is not None:
-            x = sys.argv[1]
-            y = sys.argv[2]
-    except IndexError:
+    #try:
+        #if sys.argv[3] is not None:
+            #x = sys.argv[1]
+            #y = sys.argv[2]
+    #except IndexError
     
-    ## Dies soll in eine Callbakc Funktion des RFID Subscribers ##
-    #   
-        # Ermittle Koordinaten die mit Ziel der jeweiligen Person übereinstimmen
-        file_content = dict(read_from_file())
-        ## Struktur der Datei: {Name: [x, y]} also [Name][Korordinate x/y ]
-        x = file_content[sys.argv[1]][0]
-        y = file_content[sys.argv[1]][1]
-        print(str(x) + " " + str(y))
-        response = minimal_client.send_request(int(x * 1000), int(y * 1000))
-        minimal_client.get_logger().info(
-        'Navigation to  %d + %d completed. answer: %d' %
-        (x, y, response.sum))
-    #
-    ## - ##
+        # nun oben in callback
 
+    rclpy.spin_once(name_tag_subscriber)
+    name_tag_subscriber.destroy_node()
     minimal_client.destroy_node()
     rclpy.shutdown()
 
