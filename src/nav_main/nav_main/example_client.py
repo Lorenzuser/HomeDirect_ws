@@ -21,10 +21,9 @@ class MinimalClientAsync(Node):
             self.get_logger().info('service not available, waiting again...')
         self.req = AddTwoInts.Request() 
 
-    # gewünschte x und y Koordinaten werden an den Server gesendet
-    def send_request(self, a, b):
-        self.req.a = a
-        self.req.b = b
+    def send_request(self, x, y):
+        self.req.a = x
+        self.req.b = y
         self.future = self.cli.call_async(self.req)
         rclpy.spin_until_future_complete(self, self.future)
         return self.future.result()
