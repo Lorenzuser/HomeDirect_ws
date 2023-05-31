@@ -5,8 +5,16 @@ from mfrc522 import SimpleMFRC522
 
 reader = SimpleMFRC522()
 try:
-	text = input('New data:')
-	text = text.replace(" ", "")
+	while True:
+		text = input('New data:')
+		# Entferne Leerzeichen
+		text = text.replace(" ", "")
+		# Prüfe ob nur Buchstaben
+		if text.isalpha():
+			break
+		else:
+			print("Please only use letters")
+			
 	print("Now place your tag to write")
 	reader.write(text)
 	print("Written")
