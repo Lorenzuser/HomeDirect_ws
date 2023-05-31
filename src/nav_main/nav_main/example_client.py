@@ -30,13 +30,15 @@ class NameTagSubscriber(Node):
 
     def set_goal_callback(self, msg):
         self.get_logger().info('RFID read: "%s"' % msg.data)
-        # Ermittle Koordinaten die mit Ziel der jeweiligen Person übereinstimmen
-        file_content = dict(read_from_file())
+        file_content = dict(read_from_file()) # Ermittle Koordinaten die mit Ziel der jeweiligen Person übereinstimmen
+
         ## Struktur der Datei: {Name: [x, y]} also [Name][Korordinate x/y ]
         # Name = 'msg.data' = 'text' 
+        msg.data = msg.data.replace(" ", "")
         x = file_content[msg.data][0]
         y = file_content[msg.data][1]
         print(str(x) + " " + str(y))
+
         response = self.minimal_client.send_request(int(x * 1000), int(y * 1000))
         self.minimal_client.get_logger().info(
         'Navigation to  %d + %d completed. answer: %d' %
