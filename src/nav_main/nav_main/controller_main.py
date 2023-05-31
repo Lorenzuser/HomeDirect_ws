@@ -55,18 +55,21 @@ class MinimalService(Node):
 
     def navigator(self, request, response):
         # Definiert in examle_client.py line 47
-        self.get_logger().info('Incoming request\na: %d b: %d' % (request.a, request.b))      
+        self.get_logger().info('Incoming request\na: %d b: %d' % (request.a, request.b))     
         self.goToPose(request.a / 1000, request.b / 1000)
-
-        response.sum = 1
+        self.get_logger().info("Done Driving, going to pub response")
         # prepare response
-        answer = self.nav.getResult()
-        if answer.value == 1:
-            response.sum  = 0
-        elif answer.value == 2 or answer.value == 3 or answer.value == 0:
+        try:
+            answer = self.nav.getResult()
+            if answer.value == 1:
+                response.sum  = 0
+            elif answer.value == 2 or answer.value == 3 or answer.value == 0:
+                response.sum = 1   
+        except:     
             response.sum = 1
-        
-        return int(response.sum)
+
+        self.get_logger().info(str(request.a) + " , " + str(request.b) + " , " + str(response))  
+        return response
 
 
 def main():
