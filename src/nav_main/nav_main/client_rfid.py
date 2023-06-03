@@ -7,7 +7,7 @@ import rclpy
 from rclpy.node import Node
 from std_msgs.msg import String
 
-FILENAME = '/home/dev/HomeDirect_ws/config/' + str(sys.argv[2]) + '.json'
+FILENAME = '/home/dev/HomeDirect_ws/config/' + str(sys.argv[1]) + '.json'
 # Daten aus der Datei lesen
 def read_from_file():
     with open(FILENAME, 'r') as openfile:

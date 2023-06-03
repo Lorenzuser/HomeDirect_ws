@@ -24,7 +24,8 @@ setup(
             'commander = nav_main.commander:main',
             'service = nav_main.controller_main:main',
             'client = nav_main.example_client:main',
-            'room_saver = nav_main.room_saver:main',            
+            'room_saver = nav_main.room_saver:main',    
+            'rfid_client = nav_main.client_rfid:main',        
 
         ],
     },

@@ -6,24 +6,26 @@ from rclpy.node import Node
 from nav2_simple_commander.robot_navigator import BasicNavigator
 from geometry_msgs.msg import PoseStamped
 import tf_transformations as tft
+import sys
 
 class MinimalService(Node):
     def setup_nav(self):
         self.nav = BasicNavigator()
+        print(str(sys.argv[1]))
+        if sys.argv[1] != "False":
+            q_x, q_y, q_z, q_w =  tft.quaternion_from_euler(0.0, 0.0, 0.0)
+            InitPose = PoseStamped()
+            InitPose.header.frame_id = 'map'
+            InitPose.header.stamp = self.nav.get_clock().now().to_msg()
+            InitPose.pose.position.x = 0.0
+            InitPose.pose.position.y = 0.0
+            InitPose.pose.position.z = 0.0
+            InitPose.pose.orientation.x = q_x
+            InitPose.pose.orientation.y = q_y
+            InitPose.pose.orientation.z = q_z
+            InitPose.pose.orientation.w = q_w
 
-        q_x, q_y, q_z, q_w =  tft.quaternion_from_euler(0.0, 0.0, 0.0)
-        InitPose = PoseStamped()
-        InitPose.header.frame_id = 'map'
-        InitPose.header.stamp = self.nav.get_clock().now().to_msg()
-        InitPose.pose.position.x = 0.0
-        InitPose.pose.position.y = 0.0
-        InitPose.pose.position.z = 0.0
-        InitPose.pose.orientation.x = q_x
-        InitPose.pose.orientation.y = q_y
-        InitPose.pose.orientation.z = q_z
-        InitPose.pose.orientation.w = q_w
-
-        self.nav.setInitialPose(InitPose)
+            self.nav.setInitialPose(InitPose)
 
         self.nav.waitUntilNav2Active()
 
