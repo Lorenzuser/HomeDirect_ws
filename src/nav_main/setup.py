@@ -14,9 +14,9 @@ setup(
     install_requires=['setuptools'],
     zip_safe=True,
     maintainer='dev',
-    maintainer_email='dev@todo.todo',
-    description='TODO: Package description',
-    license='TODO: License declaration',
+    maintainer_email='developer.lorenz@yahoo.com',
+    description='Main program-files from https://github.com/Lorenzuser/HomeDirect_ws',
+    license='Apache 2.0',
     tests_require=['pytest'],
     entry_points={
         'console_scripts': [
