@@ -3,9 +3,9 @@
 <package format="3">
   <name>nav_main</name>
   <version>0.0.0</version>
-  <description>TODO: Package description</description>
-  <maintainer email="dev@todo.todo">dev</maintainer>
-  <license>TODO: License declaration</license>
+  <description>Main program-files from https://github.com/Lorenzuser/HomeDirect_ws</description>
+  <maintainer email="developer.lorenz@yahoo.com">dev</maintainer>
+  <license>Apache 2.0</license>
 
   <depend>rclpy</depend>
   <depend>example_interfaces</depend>
