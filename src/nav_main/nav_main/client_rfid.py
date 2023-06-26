@@ -51,6 +51,7 @@ class TaginfoSubscriber(Node):
     # Print the received tag info to the terminal
     def taginfo_callback(self, msg):
         self.get_logger().info('RFID read: "%s"' % msg.data)
+        msg.data = msg.data.replace(" ", "")
         file_content = dict(read_from_file())
         x = file_content[str(msg.data)][0]
         y = file_content[str(msg.data)][1]
