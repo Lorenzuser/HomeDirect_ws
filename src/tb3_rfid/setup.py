@@ -1,4 +1,6 @@
 from setuptools import setup
+from glob import glob
+import os
 
 package_name = 'tb3_rfid'
 
@@ -10,11 +12,12 @@ setup(
         ('share/ament_index/resource_index/packages',
             ['resource/' + package_name]),
         ('share/' + package_name, ['package.xml']),
+	(os.path.join('share', package_name), glob('launch/*.launch.py'))
     ],
     install_requires=['setuptools'],
     zip_safe=True,
     maintainer='adev',
-    maintainer_email='alexander.janzen15@outlook.de',
+    maintainer_email='developer.lorenz@yahoo.com',
     description='Package handles publishing Data read with RFID using RC522 as well as subscribing to that data',
     license='Apache License 2.0',
     tests_require=['pytest'],
